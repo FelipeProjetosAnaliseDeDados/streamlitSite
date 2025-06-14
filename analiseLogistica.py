@@ -13,10 +13,6 @@ df = pd.read_excel("base_logistica_completa.xlsx",sheet_name="Entregas")
 unique_categoria = df['Categoria'].unique()
 unique_tipo_Veiculo = df['Veiculo'].unique()
 
-
-unique_categoria.append("Todos")
-
-
 filtro_categoria, filtro_veiculo = st.columns(2)
 
 with filtro_categoria:
